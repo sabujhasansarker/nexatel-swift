@@ -9,32 +9,37 @@ import SwiftUI
 
 struct CustomNavHeader: View {
     let title: String
+    let detail: String
     let onBack: () -> Void
     
     var body: some View {
         HStack(spacing: 10) {
             Button(action: onBack) {
-                Image(systemName: "chevron.left")
-                    .font(.system(size: 18, weight: .semibold))
+                Image("chevron-left")
+                    .renderingMode(.template)
+                    .font(.system(size: 16))
                     .foregroundStyle(.black)
-                    .frame(width: 50, height: 50)
-                    .background(Color(hex: "#F2F2F7"))
-                    .cornerRadius(200)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 200)
-                            .inset(by: 0.50)
-                            .stroke(Color(red: 0.91, green: 0.91, blue: 0.92), lineWidth: 0.50)
-                    )
             }
+            .padding(18)
+            .frame(width: 55, height: 55, alignment: .center)
+            .background(.white)
+            .cornerRadius(200)
+            .overlay(
+            RoundedRectangle(cornerRadius: 200)
+            .inset(by: 0.5)
+            .stroke(Color(red: 0.91, green: 0.91, blue: 0.92), lineWidth: 1)
+            )
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(title)
                     .font(.system(.title3, weight: .medium))
                     .foregroundStyle(.black)
+                Text(detail)
+                    .font(.system(size: 18))
+                  .foregroundColor(Color.brand.gray)
             }
             
             Spacer()
         }
-        .padding(.horizontal, 10)
-    }
+        .padding()    }
 }

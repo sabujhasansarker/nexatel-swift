@@ -25,13 +25,12 @@ extension Color {
     
     static let brand = BrandColor()
     struct BrandColor {
-        let bg = Color(hex: "#F3F5F9")
-        let black = Color(hex: "#000604")
-        let border = Color(hex: "#E9E9EB")
+        let bg = Color(red: 0.95, green: 0.96, blue: 0.98)
+        let black = Color(red: 0, green: 0.02, blue: 0.02)
+        let border = Color(red: 0.91, green: 0.91, blue: 0.92)
+        let gray = Color(red: 0.56, green: 0.56, blue: 0.58)
+        let gray500 = Color(red: 0.47, green: 0.47, blue: 0.47)
+        let primary = Color(red: 0.05, green: 0.69, blue: 0.45)
     }
 }
 
-
-struct Constants {
-  static let GraysGray: Color = Color(red: 0.56, green: 0.56, blue: 0.58)
-}
