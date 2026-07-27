@@ -4,6 +4,7 @@ enum CallType {
     case outgoing
     case missed
     case incoming
+    case message
 }
 
 struct Call: Identifiable {

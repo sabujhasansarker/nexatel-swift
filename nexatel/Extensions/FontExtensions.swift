@@ -1,11 +1,12 @@
 import SwiftUI
 
 extension Font {
-    static func poppins(_ weight: PoppinsWeight = .regular, fontStyle: Font.TextStyle = .body) -> Font{
-        return custom(weight.rawValue, size: fontStyle.size)
+    static func poppins(size: CGFloat, _ weight: PoppinsWeight = .regular) -> Font {
+        .custom(weight.rawValue, size: size)
     }
-    static func poppins(_ weight: PoppinsWeight = .regular, size: CGFloat) -> Font {
-            .custom(weight.rawValue, size: size)
+
+    static func poppins(fontStyle: Font.TextStyle = .body, _ weight: PoppinsWeight = .regular) -> Font {
+        .custom(weight.rawValue, size: fontStyle.size)
     }
 }
 
@@ -30,7 +31,8 @@ extension Font.TextStyle {
 
 enum PoppinsWeight: String {
     case regular = "Poppins-Regular"
-    case bold = "Poppins-Bold"
+    case medium = "Poppins-Medium"
     case semibold = "Poppins-SemiBold"
+    case bold = "Poppins-Bold"
     case light = "Poppins-Light"
 }

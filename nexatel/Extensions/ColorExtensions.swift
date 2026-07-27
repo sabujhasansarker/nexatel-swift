@@ -31,6 +31,7 @@ extension Color {
         let gray = Color(red: 0.56, green: 0.56, blue: 0.58)
         let gray500 = Color(red: 0.47, green: 0.47, blue: 0.47)
         let primary = Color(red: 0.05, green: 0.69, blue: 0.45)
+        let danger = Color(red: 1, green: 0.22, blue: 0.24)
     }
 }
 
