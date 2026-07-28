@@ -1,7 +1,6 @@
-
 import Foundation
 
-extension Contact {
+extension ContactModel {
     static let sampleData: [ContactModel] = [
         ContactModel(name: "Abuj", phone: "019282562725"),
         ContactModel(name: "Mehedi Hasan", phone: "01712345678"),

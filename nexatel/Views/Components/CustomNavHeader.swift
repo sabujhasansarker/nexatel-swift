@@ -25,9 +25,9 @@ struct CustomNavHeader: View {
             .background(.white)
             .cornerRadius(200)
             .overlay(
-            RoundedRectangle(cornerRadius: 200)
-            .inset(by: 0.5)
-            .stroke(Color(red: 0.91, green: 0.91, blue: 0.92), lineWidth: 1)
+                RoundedRectangle(cornerRadius: 200)
+                    .inset(by: 0.5)
+                    .stroke(Color(red: 0.91, green: 0.91, blue: 0.92), lineWidth: 1)
             )
             
             VStack(alignment: .leading, spacing: 4) {
@@ -36,10 +36,11 @@ struct CustomNavHeader: View {
                     .foregroundStyle(.black)
                 Text(detail)
                     .font(.system(size: 18))
-                  .foregroundColor(Color.brand.gray)
+                    .foregroundColor(Color.brand.gray)
             }
             
             Spacer()
         }
-        .padding()    }
+        .padding()
+    }
 }

@@ -1,8 +1,8 @@
-//
-//  AppScreen.swift
-//  nexatel
-//
-//  Created by Sabuj on 27/7/26.
-//
-
 import Foundation
+
+enum AppScreen: Hashable {
+    case recentCalls
+    case dialPad
+    case profile
+    case settings
+}

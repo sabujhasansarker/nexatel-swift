@@ -1,8 +1,22 @@
-//
-//  DialPad.swift
-//  nexatel
-//
-//  Created by Sabuj on 27/7/26.
-//
+import SwiftUI
 
-import Foundation
+struct DialPad: View {
+
+    var body: some View {
+        VStack(spacing: 0) {
+            CallHeader()
+
+            VStack {
+                Dial()
+            }
+
+            ScrollView {
+            }
+            .padding(.horizontal)
+        }
+    }
+}
+
+#Preview {
+    DialPad()
+}

@@ -16,6 +16,7 @@ struct CallHeader : View {
                             .foregroundColor(.black)
                         Text("mehedi@gmail.com")
                             .font(.poppins(size: 16, .regular))
+                            .foregroundColor(Color.brand.gray)
                             .accentColor(Color.brand.gray)
                     }
                 }
