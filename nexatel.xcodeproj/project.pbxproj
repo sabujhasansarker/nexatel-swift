@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8CE867D93018569A00BF3762 /* LucideIcons in Frameworks */ = {isa = PBXBuildFile; productRef = 8CE867D83018569A00BF3762 /* LucideIcons */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8CED9B783012DBD100880957 /* nexatel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nexatel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CE867D93018569A00BF3762 /* LucideIcons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = nexatel;
 			packageProductDependencies = (
+				8CE867D83018569A00BF3762 /* LucideIcons */,
 			);
 			productName = nexatel;
 			productReference = 8CED9B783012DBD100880957 /* nexatel.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 8CED9B6F3012DBD000880957;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8CE867D73018569A00BF3762 /* XCRemoteSwiftPackageReference "lucide-icons-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8CED9B793012DBD100880957 /* Products */;
 			projectDirPath = "";
@@ -343,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8CE867D73018569A00BF3762 /* XCRemoteSwiftPackageReference "lucide-icons-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JakubMazur/lucide-icons-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.27.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8CE867D83018569A00BF3762 /* LucideIcons */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8CE867D73018569A00BF3762 /* XCRemoteSwiftPackageReference "lucide-icons-swift" */;
+			productName = LucideIcons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8CED9B703012DBD000880957 /* Project object */;
 }
