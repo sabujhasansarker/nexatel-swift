@@ -1,37 +1,49 @@
 import SwiftUI
 
 struct RootScreen: View {
+
     @State private var activeScreen: AppScreen = .recentCalls
 
     var body: some View {
+
         NavigationStack {
+
             ZStack {
+
                 Color.brand.bg
                     .ignoresSafeArea()
 
-                currentContent
-                Spacer().frame(height: 120)
+                content
             }
-        }
-        .safeAreaInset(edge: .bottom, spacing: 0) {
-            Menus(activeScreen: $activeScreen).padding(.bottom, -15)
+            .safeAreaInset(edge: .bottom) {
+
+                Menus(activeScreen: $activeScreen)
+                    .padding(.bottom, -15)
+            }
         }
     }
 
+
     @ViewBuilder
-    private var currentContent: some View {
+    private var content: some View {
+
         switch activeScreen {
+
         case .recentCalls:
             RecentCalls()
-        case .dialPad:
-            DialPad()
+
         case .profile:
             Contact()
+
+        case .dialPad:
+            DialPad()
+
         case .settings:
             Settings()
         }
     }
 }
+
 
 #Preview {
     RootScreen()
