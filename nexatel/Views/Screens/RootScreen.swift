@@ -28,6 +28,9 @@ struct RootScreen: View {
     private var content: some View {
 
         switch activeScreen {
+            
+        case .message:
+            MessagesRoot()
 
         case .recentCalls:
             RecentCalls()

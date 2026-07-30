@@ -8,7 +8,8 @@ struct MenuItem: Identifiable {
 
 enum MenuData {
     static let items: [MenuItem] = [
-        .init(icon: "clock", screen: .recentCalls),
+        .init(icon: "message", screen: .message),
+        .init(icon: "phone", screen: .recentCalls),
         .init(icon: "person", screen: .profile),
         .init(icon: "circle.grid.2x2", screen: .dialPad),
         .init(icon: "gearshape", screen: .settings)
@@ -31,14 +32,14 @@ struct Menus: View {
                     Image(systemName: item.icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 24, height: 24)
+                        .frame(width: 22, height: 22)
                         .foregroundStyle(
                             activeScreen == item.screen
                             ? .white
                             : Color.brand.black
                         )
                 }
-                .frame(width: 60, height: 60)
+                .frame(width: 55, height: 55)
                 .background(
                     activeScreen == item.screen
                     ? Color(red: 0.05, green: 0.69, blue: 0.45)

@@ -5,4 +5,5 @@ enum AppScreen: Hashable {
     case dialPad
     case profile
     case settings
+    case message
 }
